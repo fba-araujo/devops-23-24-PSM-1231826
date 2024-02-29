@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Changed location of tut-react-and-spring-data-rest spring guide to be in an individual package.">
-      <change afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/test/java/com/greglturnquist/payroll/EmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Added feature record the years of the employee in the company. Close #1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/test/java/com/greglturnquist/payroll/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/test/java/com/greglturnquist/payroll/EmployeeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +44,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.EmployeeTest.createValidEmployee.executor": "Run",
     "JUnit.EmployeeTest.executor": "Run",
     "JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName.executor": "Run",
     "JUnit.EmployeeTest.tryToCreateEmployeeWhitespaceDescription.executor": "Run",
@@ -86,7 +82,7 @@
       <recent name="com.greglturnquist.payroll" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTest">
+  <component name="RunManager" selected="JUnit.EmployeeTest.createValidEmployee">
     <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="react-and-spring-data-rest-basic (1)" />
       <extension name="coverage">
@@ -98,6 +94,22 @@
       <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
       <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest.createValidEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="react-and-spring-data-rest-basic (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.greglturnquist.payroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
+      <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
+      <option name="METHOD_NAME" value="createValidEmployee" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,6 +228,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeTest.createValidEmployee" />
         <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName" />
         <item itemvalue="JUnit.EmployeeTest.tryToCreateEmployeeWhitespaceDescription" />
@@ -234,7 +247,8 @@
       <workItem from="1709161531033" duration="211000" />
       <workItem from="1709162116029" duration="667000" />
       <workItem from="1709203086427" duration="1201000" />
-      <workItem from="1709204360696" duration="3733000" />
+      <workItem from="1709204360696" duration="7375000" />
+      <workItem from="1709212325354" duration="1739000" />
     </task>
     <task id="LOCAL-00001" summary="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title">
       <option name="closed" value="true" />
@@ -252,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709162735102</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added feature record the years of the employee in the company. Close #1">
+      <option name="closed" value="true" />
+      <created>1709211576480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709211576480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +283,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title" />
     <MESSAGE value="Changed location of tut-react-and-spring-data-rest spring guide to be in an individual package." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed location of tut-react-and-spring-data-rest spring guide to be in an individual package." />
+    <MESSAGE value="Added feature record the years of the employee in the company. Close #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added feature record the years of the employee in the company. Close #1" />
   </component>
 </project>

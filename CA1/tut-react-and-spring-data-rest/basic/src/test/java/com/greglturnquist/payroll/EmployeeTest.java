@@ -6,13 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeTest {
     @Test
-    void createValidEmployee() throws InstantiationException {
+    void createValidEmployee(){
         String firstName = "Frodo";
         String lastName = "Baggins";
         String description = "Ring Bearer";
         int jobYears = 0;
-        Employee employee = new Employee(firstName, lastName, description, jobYears);
-        assertNotNull(employee);
+        assertDoesNotThrow(() -> new Employee(firstName, lastName, description, jobYears));
     }
 
     @Test
