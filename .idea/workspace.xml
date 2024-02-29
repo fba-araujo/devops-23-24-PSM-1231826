@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Changed location of tut-react-and-spring-data-rest spring guide to be in an individual package." />
+    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Changed location of tut-react-and-spring-data-rest spring guide to be in an individual package.">
+      <change afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/test/java/com/greglturnquist/payroll/EmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/js/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,40 +47,89 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ReactAndSpringDataRestApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.EmployeeTest.executor": "Run",
+    "JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName.executor": "Run",
+    "JUnit.EmployeeTest.tryToCreateEmployeeWhitespaceDescription.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ReactAndSpringDataRestApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/fibig/Documents/SWitCH/2-Semestre/DevOps/RepositórioCA/devops-23-24-PSM-1231826",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\fibig\Documents\SWitCH\2-Semestre\DevOps\Repositório\devops-23-24-PSM-1231826\tut-react" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.greglturnquist.payroll" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReactAndSpringDataRestApplication">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="devops-23-24-PSM-1231826" />
+  <component name="RunManager" selected="JUnit.EmployeeTest">
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="react-and-spring-data-rest-basic (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.greglturnquist.payroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
+      <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="devops-23-24-PSM-1231826" />
-      <option name="filePath" />
+    <configuration name="EmployeeTest.tryToCreateEmployeeNullFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="react-and-spring-data-rest-basic (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.greglturnquist.payroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
+      <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
+      <option name="METHOD_NAME" value="tryToCreateEmployeeNullFirstName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest.tryToCreateEmployeeWhitespaceDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="react-and-spring-data-rest-basic (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.greglturnquist.payroll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
+      <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
+      <option name="METHOD_NAME" value="tryToCreateEmployeeWhitespaceDescription" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,6 +166,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReactAndSpringDataRestApplication (5)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="react-and-spring-data-rest-basic (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.greglturnquist.payroll.ReactAndSpringDataRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactAndSpringDataRestApplication (6)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="react-and-spring-data-rest-conditional (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.greglturnquist.payroll.ReactAndSpringDataRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactAndSpringDataRestApplication (7)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="react-and-spring-data-rest-events (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.greglturnquist.payroll.ReactAndSpringDataRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactAndSpringDataRestApplication (8)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="react-and-spring-data-rest-hypermedia (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.greglturnquist.payroll.ReactAndSpringDataRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactAndSpringDataRestApplication (9)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="react-and-spring-data-rest-security (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.greglturnquist.payroll.ReactAndSpringDataRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReactAndSpringDataRestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="react-and-spring-data-rest-basic" />
@@ -109,6 +214,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmployeeTest" />
+        <item itemvalue="JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName" />
+        <item itemvalue="JUnit.EmployeeTest.tryToCreateEmployeeWhitespaceDescription" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -121,6 +233,8 @@
       <workItem from="1709156058430" duration="2609000" />
       <workItem from="1709161531033" duration="211000" />
       <workItem from="1709162116029" duration="667000" />
+      <workItem from="1709203086427" duration="1201000" />
+      <workItem from="1709204360696" duration="3733000" />
     </task>
     <task id="LOCAL-00001" summary="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title">
       <option name="closed" value="true" />

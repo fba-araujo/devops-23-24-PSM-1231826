@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tut-react/basic/src/main/java" charset="UTF-8" />
@@ -8,5 +15,7 @@
     <file url="file://$PROJECT_DIR$/tut-react/events/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tut-react/hypermedia/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tut-react/security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tut-react/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tut-react/src/main/resources" charset="UTF-8" />
   </component>
 </project>
