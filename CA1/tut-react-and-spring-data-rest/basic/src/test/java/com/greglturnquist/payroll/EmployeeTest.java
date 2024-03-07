@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeTest {
     @Test
-    void createValidEmployee(){
+    void createValidEmployee() {
         String firstName = "Frodo";
         String lastName = "Baggins";
         String description = "Ring Bearer";
