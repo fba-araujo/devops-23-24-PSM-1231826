@@ -41,7 +41,7 @@ public class Employee {
 
     public Employee(String firstName, String lastName, String description, int jobYears, String email) throws InstantiationException {
         boolean employeeAtributeCheck = checkIfEmployeeAtributes(firstName, lastName, description, jobYears, email);
-        if (!employeeAtributeCheck) {
+        if (!employeeAtributeCheck){
             throw (new InstantiationException("Employee parameters invalid! Verify!"));
         }
         this.firstName = firstName;
@@ -55,7 +55,7 @@ public class Employee {
         if (firstName == null || firstName.isBlank() || lastName == null || lastName.isBlank() || description == null || description.isBlank()) {
             return false;
         }
-        if (email == null || email.isBlank()) {
+        if (!email.contains("@") || email == null || email.isBlank()) {
             return false;
         }
         if (jobYears < 0) {
@@ -138,7 +138,7 @@ public class Employee {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", description='" + description + '\'' +
-                ", jobYears='" + jobYears + '\'' +
+				", jobYears='" + jobYears + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
