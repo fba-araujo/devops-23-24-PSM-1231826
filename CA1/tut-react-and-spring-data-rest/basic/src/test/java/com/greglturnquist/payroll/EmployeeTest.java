@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeTest {
     @Test
-    void createValidEmployee(){
+    void createValidEmployee() {
         String firstName = "Frodo";
         String lastName = "Baggins";
         String description = "Ring Bearer";
@@ -131,7 +131,7 @@ class EmployeeTest {
         String lastName = "Baggins";
         String description = "Ring Bearer";
         int jobYears = 1;
-        String email = "frodolotr.com";
+        String email = "";
         assertThrows(InstantiationException.class, () -> new Employee(firstName, lastName, description, jobYears, email));
     }
 
@@ -151,7 +151,7 @@ class EmployeeTest {
         String lastName = "Baggins";
         String description = "Ring Bearer";
         int jobYears = 1;
-        String email = "    ";
+        String email = "frodolotr.com";
         assertThrows(InstantiationException.class, () -> new Employee(firstName, lastName, description, jobYears, email));
     }
 }
