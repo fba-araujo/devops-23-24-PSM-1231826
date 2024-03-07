@@ -131,12 +131,22 @@ class EmployeeTest {
         String lastName = "Baggins";
         String description = "Ring Bearer";
         int jobYears = 1;
-        String email = "";
+        String email = "frodolotr.com";
         assertThrows(InstantiationException.class, () -> new Employee(firstName, lastName, description, jobYears, email));
     }
 
     @Test
     void tryToCreateEmployeeWhitespaceEmail() {
+        String firstName = "Frodo";
+        String lastName = "Baggins";
+        String description = "Ring Bearer";
+        int jobYears = 1;
+        String email = "    ";
+        assertThrows(InstantiationException.class, () -> new Employee(firstName, lastName, description, jobYears, email));
+    }
+
+    @Test
+    void tryToCreateEmployeeEmailNoAtSign() {
         String firstName = "Frodo";
         String lastName = "Baggins";
         String description = "Ring Bearer";
