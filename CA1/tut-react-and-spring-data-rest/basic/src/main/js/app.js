@@ -1,25 +1,30 @@
 'use strict';
 
 // tag::vars[]
+// Import necessary modules
 const React = require('react'); // <1>
 const ReactDOM = require('react-dom'); // <2>
 const client = require('./client'); // <3>
 // end::vars[]
 
 // tag::app[]
+// Define the main App component
 class App extends React.Component { // <1>
 
+    // Constructor to initialize state
     constructor(props) {
         super(props);
         this.state = {employees: []};
     }
 
+    // Lifecycle method to fetch data when component mounts
     componentDidMount() { // <2>
         client({method: 'GET', path: '/api/employees'}).done(response => {
             this.setState({employees: response.entity._embedded.employees});
         });
     }
 
+    // Render method to display the EmployeeList component
     render() { // <3>
         return (
             <EmployeeList employees={this.state.employees}/>
@@ -30,7 +35,9 @@ class App extends React.Component { // <1>
 // end::app[]
 
 // tag::employee-list[]
+// Define the EmployeeList component
 class EmployeeList extends React.Component {
+    // Render method to display a table of employees
     render() {
         const employees = this.props.employees.map(employee =>
             <Employee key={employee._links.self.href} employee={employee}/>
@@ -55,8 +62,10 @@ class EmployeeList extends React.Component {
 // end::employee-list[]
 
 // tag::employee[]
+// Define the Employee component
 class Employee extends React.Component {
     render() {
+        // Render method to display details of a single employee
         return (
             <tr>
                 <td>{this.props.employee.firstName}</td>
@@ -72,6 +81,7 @@ class Employee extends React.Component {
 // end::employee[]
 
 // tag::render[]
+// Render the main App component to the DOM
 ReactDOM.render(
     <App/>,
     document.getElementById('react')

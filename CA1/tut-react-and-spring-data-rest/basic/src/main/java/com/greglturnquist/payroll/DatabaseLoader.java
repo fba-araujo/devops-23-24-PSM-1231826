@@ -20,6 +20,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 /**
+ * Initializes the database with sample employee data.
+ * Implements CommandLineRunner interface to run code on application startup.
+ * Loads sample employee data into the database using the EmployeeRepository.
+ *
  * @author Greg Turnquist
  */
 // tag::code[]
@@ -28,11 +32,22 @@ public class DatabaseLoader implements CommandLineRunner { // <2>
 
     private final EmployeeRepository repository;
 
+    /**
+     * Constructs a new DatabaseLoader with the specified EmployeeRepository.
+     *
+     * @param repository The EmployeeRepository to use for database operations.
+     */
     @Autowired // <3>
     public DatabaseLoader(EmployeeRepository repository) {
         this.repository = repository;
     }
 
+    /**
+     * Runs the DatabaseLoader to initialize the database with sample employee data.
+     *
+     * @param strings Command-line arguments (not used).
+     * @throws Exception If an error occurs while initializing the database.
+     */
     @Override
     public void run(String... strings) throws Exception { // <4>
         this.repository.save(new Employee("Frodo", "Baggins", "Ring Bearer", 1, "frodobaggins@lotr.com"));
