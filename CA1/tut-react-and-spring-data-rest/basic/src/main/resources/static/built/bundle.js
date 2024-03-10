@@ -34085,6 +34085,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (r
 
 
 // tag::vars[]
+// Import necessary modules
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
@@ -34104,10 +34105,12 @@ var client = __webpack_require__(/*! ./client */ "./src/main/js/client.js"); // 
 // end::vars[]
 
 // tag::app[]
+// Define the main App component
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
   // <1>
 
+  // Constructor to initialize state
   function App(props) {
     var _this;
     _classCallCheck(this, App);
@@ -34117,6 +34120,8 @@ var App = /*#__PURE__*/function (_React$Component) {
     };
     return _this;
   }
+
+  // Lifecycle method to fetch data when component mounts
   _createClass(App, [{
     key: "componentDidMount",
     value: function componentDidMount() {
@@ -34131,6 +34136,8 @@ var App = /*#__PURE__*/function (_React$Component) {
         });
       });
     }
+
+    // Render method to display the EmployeeList component
   }, {
     key: "render",
     value: function render() {
@@ -34143,6 +34150,7 @@ var App = /*#__PURE__*/function (_React$Component) {
   return App;
 }(React.Component); // end::app[]
 // tag::employee-list[]
+// Define the EmployeeList component
 var EmployeeList = /*#__PURE__*/function (_React$Component2) {
   _inherits(EmployeeList, _React$Component2);
   function EmployeeList() {
@@ -34151,7 +34159,9 @@ var EmployeeList = /*#__PURE__*/function (_React$Component2) {
   }
   _createClass(EmployeeList, [{
     key: "render",
-    value: function render() {
+    value:
+    // Render method to display a table of employees
+    function render() {
       var employees = this.props.employees.map(function (employee) {
         return /*#__PURE__*/React.createElement(Employee, {
           key: employee._links.self.href,
@@ -34164,6 +34174,7 @@ var EmployeeList = /*#__PURE__*/function (_React$Component2) {
   return EmployeeList;
 }(React.Component); // end::employee-list[]
 // tag::employee[]
+// Define the Employee component
 var Employee = /*#__PURE__*/function (_React$Component3) {
   _inherits(Employee, _React$Component3);
   function Employee() {
@@ -34173,12 +34184,14 @@ var Employee = /*#__PURE__*/function (_React$Component3) {
   _createClass(Employee, [{
     key: "render",
     value: function render() {
+      // Render method to display details of a single employee
       return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, this.props.employee.firstName), /*#__PURE__*/React.createElement("td", null, this.props.employee.lastName), /*#__PURE__*/React.createElement("td", null, this.props.employee.description), /*#__PURE__*/React.createElement("td", null, this.props.employee.jobYears), /*#__PURE__*/React.createElement("td", null, this.props.employee.email));
     }
   }]);
   return Employee;
 }(React.Component); // end::employee[]
 // tag::render[]
+// Render the main App component to the DOM
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('react'));
 // end::render[]
 

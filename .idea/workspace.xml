@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Added feature record the years of the employee in the company. Close #1" />
+    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Resolve #5 Add JavaDocs to Code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,6 +250,7 @@
       <workItem from="1709203086427" duration="1201000" />
       <workItem from="1709204360696" duration="7375000" />
       <workItem from="1709212325354" duration="1739000" />
+      <workItem from="1710076800818" duration="11279000" />
     </task>
     <task id="LOCAL-00001" summary="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title">
       <option name="closed" value="true" />
@@ -270,7 +276,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709211576480</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix: Fix bug that allows emails without @. Fixed #3">
+      <option name="closed" value="true" />
+      <created>1709815004076</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709815004076</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge Branch Fix: Fix bug that allows emails without @. Fixed #3">
+      <option name="closed" value="true" />
+      <created>1709815121916</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709815121916</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Resolve #5 Add JavaDocs to Code">
+      <option name="closed" value="true" />
+      <created>1710090494585</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710090494585</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +310,9 @@
     <MESSAGE value="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title" />
     <MESSAGE value="Changed location of tut-react-and-spring-data-rest spring guide to be in an individual package." />
     <MESSAGE value="Added feature record the years of the employee in the company. Close #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature record the years of the employee in the company. Close #1" />
+    <MESSAGE value="Fix: Fix bug that allows emails without @. Fixed #3" />
+    <MESSAGE value="Merge Branch Fix: Fix bug that allows emails without @. Fixed #3" />
+    <MESSAGE value="Resolve #5 Add JavaDocs to Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolve #5 Add JavaDocs to Code" />
   </component>
 </project>
