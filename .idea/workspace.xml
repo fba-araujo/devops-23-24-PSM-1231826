@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Resolve #5 Add JavaDocs to Code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/resources/static/built/bundle.js.map" afterDir="false" />
-    </list>
+    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Resolve #5 Add JavaDocs to Code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +26,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -251,6 +246,7 @@
       <workItem from="1709204360696" duration="7375000" />
       <workItem from="1709212325354" duration="1739000" />
       <workItem from="1710076800818" duration="11279000" />
+      <workItem from="1710415522713" duration="364000" />
     </task>
     <task id="LOCAL-00001" summary="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title">
       <option name="closed" value="true" />
