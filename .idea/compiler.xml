@@ -6,18 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="react-and-spring-data-rest-conditional (1)" />
-        <module name="react-and-spring-data-rest-security (1)" />
-        <module name="react-and-spring-data-rest-conditional" />
-        <module name="react-and-spring-data-rest-hypermedia" />
-        <module name="react-and-spring-data-rest-security" />
-        <module name="react-and-spring-data-rest-hypermedia (1)" />
-        <module name="react-and-spring-data-rest-events (1)" />
         <module name="react-and-spring-data-rest-basic (1)" />
-        <module name="react-and-spring-data-rest-basic" />
-        <module name="react-and-spring-data-rest-events" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="react-and-spring-data-rest" target="1.8" />
+      <module name="react-and-spring-data-rest-basic" target="1.8" />
+      <module name="react-and-spring-data-rest-conditional" target="1.8" />
+      <module name="react-and-spring-data-rest-conditional (1)" target="1.8" />
+      <module name="react-and-spring-data-rest-events" target="1.8" />
+      <module name="react-and-spring-data-rest-events (1)" target="1.8" />
+      <module name="react-and-spring-data-rest-hypermedia" target="1.8" />
+      <module name="react-and-spring-data-rest-hypermedia (1)" target="1.8" />
+      <module name="react-and-spring-data-rest-security" target="1.8" />
+      <module name="react-and-spring-data-rest-security (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

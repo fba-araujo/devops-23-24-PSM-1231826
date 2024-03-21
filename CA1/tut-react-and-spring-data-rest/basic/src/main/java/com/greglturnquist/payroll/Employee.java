@@ -59,8 +59,8 @@ public class Employee {
      * @throws InstantiationException If any attribute is invalid.
      */
     public Employee(String firstName, String lastName, String description, int jobYears, String email) throws InstantiationException {
-        boolean employeeAtributeCheck = checkIfEmployeeAtributes(firstName, lastName, description, jobYears, email);
-        if (!employeeAtributeCheck) {
+        boolean employeeAttributeCheck = checkIfEmployeeAtributes(firstName, lastName, description, jobYears, email);
+        if (!employeeAttributeCheck) {
             throw (new InstantiationException("Employee parameters invalid! Verify!"));
         }
         this.firstName = firstName;
@@ -84,7 +84,7 @@ public class Employee {
         if (firstName == null || firstName.isBlank() || lastName == null || lastName.isBlank() || description == null || description.isBlank()) {
             return false;
         }
-        if (!email.contains("@") || email == null || email.isBlank()) {
+        if (email == null || !email.contains("@") || email.isBlank()) {
             return false;
         }
         if (jobYears < 0) {

@@ -12,6 +12,15 @@
         <option value="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/pom.xml" />
+        <option value="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/pom.xml" />
+        <option value="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/pom.xml" />
+        <option value="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/pom.xml" />
+        <option value="$PROJECT_DIR$/tut-react/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK" />
 </project>
