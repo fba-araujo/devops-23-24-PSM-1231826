@@ -82,4 +82,23 @@ task backupSources(type: Copy) {
     into backupDir
 }
 
+task zipSources(type: Zip) {
+    group = 'Archive'
+    description = 'Creates a zip archive containing the application sources'
+
+    // Define the source directory
+    def sourceDir = file('src')
+
+    // Define the destination zip file
+    def zipFile = file("${buildDir}/archives/sources.zip")
+
+    // Set the source directory for the zip operation
+    from sourceDir
+
+    // Set the name and destination directory for the created zip archive
+    archiveFileName = zipFile.name
+    destinationDirectory = zipFile.parentFile
+}
+
+
 

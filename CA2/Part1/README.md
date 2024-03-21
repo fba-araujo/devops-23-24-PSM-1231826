@@ -9,9 +9,10 @@ Adding new features to it.
 
 - [Part 1](#Part-1)
 - [Step 1: Downloading and Committing the example application](#step-1-downloading-and-committing-the-example-application-)
-- [Step 2: Add new task to execute the server](#step-2-execute-the-server)
+- [Step 2: Add new task to execute the server](#step-2-add-new-task-to-execute-the-server)
 - [Step 3: Simple Unit Testing](#step-3-simple-unit-test)
 - [Step 4: Add new task of type copy](#step-4-add-a-new-task-of-type-copy)
+- [Step 5: Add new task of type zip](#step-5-add-a-new-task-of-type-zip)
 
 ## Part 1
 
@@ -30,29 +31,29 @@ Updated gradle-wrapper.properties
 ``` properties
 distributionUrl=https\://services.gradle.org/distributions/gradle-8.5-bin.zip
 ```
+---
+#### Using the ReadMe of the Basic Graddle Demo
 
     % cd ca2/part1/gradle_basic_demo
-
 Build
------
 
     % ./gradlew build 
 
 Run the server
---------------
 
     % java -cp build/libs/basic_demo-0.1.0.jar basic_demo.ChatServerApp 59001
 
-Run two clients
-------------
+Run two clients to test
 
     % ./gradlew runClient
+---
 
-Created task to automate the running of the server
+#### Created task to automate the running of the server
 
 ```groovy
 task runServer(type: JavaExec, dependsOn: classes) {
     group = "DevOps"
+    
     description = "Launches the chat server"
 
     classpath = sourceSets.main.runtimeClasspath
@@ -96,7 +97,7 @@ public class AppTest {
 }
 ```
 
-And added the following dependency to graddle script
+And added the following dependency to gradle script
 
     implementation 'junit:junit:4.12'
 
@@ -104,8 +105,8 @@ And added the following dependency to graddle script
 
 ```groovy
 task backupSources(type: Copy) {
-group = 'Backup'
-description = 'Make a backup of the application sources'
+    group = 'Backup'
+    description = 'Make a backup of the application sources'
 
     // Define the source directory
     def sourceDir = file('src')
@@ -118,3 +119,26 @@ description = 'Make a backup of the application sources'
     into backupDir
 }
 ```
+
+### Step 5: Add a new task of type Zip
+
+```groovy
+task zipSources(type: Zip) {
+    group = 'Archive'
+    description = 'Creates a zip archive containing the application sources'
+
+    // Define the source directory
+    def sourceDir = file('src')
+
+    // Define the destination zip file
+    def zipFile = file("${buildDir}/archives/sources.zip")
+
+    // Set the source directory for the zip operation
+    from sourceDir
+
+    // Set the name and destination directory for the created zip archive
+    archiveFileName = zipFile.name
+    destinationDirectory = zipFile.parentFile
+}
+```
+
