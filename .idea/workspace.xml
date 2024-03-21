@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Close #7 basic multithreaded chat room server able to be executed">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/basic_demo.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo/src/test/java/basic_demo/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Close #8 Added Simple unit test for the App Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA2/Part1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part1/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +76,8 @@
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.AppTest.executor": "Run",
     "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.gradle_basic_demo [runClient].executor": "Run",
+    "Gradle.gradle_basic_demo [runServer].executor": "Run",
     "JUnit.EmployeeTest.createValidEmployee.executor": "Run",
     "JUnit.EmployeeTest.executor": "Run",
     "JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName.executor": "Run",
@@ -130,7 +125,7 @@
       <recent name="com.greglturnquist.payroll" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AppTest">
+  <component name="RunManager" selected="Gradle.gradle_basic_demo [runServer]">
     <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -153,6 +148,50 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="gradle_basic_demo [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="gradle_basic_demo [runServer]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runServer" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -181,38 +220,6 @@
       <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
       <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
       <option name="METHOD_NAME" value="createValidEmployee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTest.tryToCreateEmployeeNullFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="react-and-spring-data-rest-basic (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.greglturnquist.payroll.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
-      <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
-      <option name="METHOD_NAME" value="tryToCreateEmployeeNullFirstName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTest.tryToCreateEmployeeWhitespaceDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="react-and-spring-data-rest-basic (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.greglturnquist.payroll.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.greglturnquist.payroll" />
-      <option name="MAIN_CLASS_NAME" value="com.greglturnquist.payroll.EmployeeTest" />
-      <option name="METHOD_NAME" value="tryToCreateEmployeeWhitespaceDescription" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -300,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.gradle_basic_demo [runServer]" />
+        <item itemvalue="Gradle.gradle_basic_demo [runClient]" />
         <item itemvalue="Gradle.AppTest" />
         <item itemvalue="JUnit.EmployeeTest.createValidEmployee" />
         <item itemvalue="JUnit.EmployeeTest" />
-        <item itemvalue="JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName" />
-        <item itemvalue="JUnit.EmployeeTest.tryToCreateEmployeeWhitespaceDescription" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +339,7 @@
       <workItem from="1710076800818" duration="11279000" />
       <workItem from="1710415522713" duration="4425000" />
       <workItem from="1710427017423" duration="10000" />
-      <workItem from="1711015613125" duration="2272000" />
+      <workItem from="1711015613125" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title">
       <option name="closed" value="true" />
@@ -390,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710419950426</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Close #8 Added Simple unit test for the App Class">
+      <option name="closed" value="true" />
+      <created>1711018044250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711018044250</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,6 +419,7 @@
     <MESSAGE value="Merge Branch Fix: Fix bug that allows emails without @. Fixed #3" />
     <MESSAGE value="Resolve #5 Add JavaDocs to Code" />
     <MESSAGE value="Close #7 basic multithreaded chat room server able to be executed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Close #7 basic multithreaded chat room server able to be executed" />
+    <MESSAGE value="Close #8 Added Simple unit test for the App Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Close #8 Added Simple unit test for the App Class" />
   </component>
 </project>
