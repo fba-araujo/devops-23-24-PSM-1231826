@@ -4,19 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Fix: Added some repository corrections post review with teacher #12">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/README.md" afterDir="false" />
+    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Close #11 Add a new task of type Zip">
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/api/uriListConverter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/api/uriTemplateInterceptor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/test/java/com/greglturnquist/payroll/EmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA2/Part2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestBasicApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/test/java/com/greglturnquist/payroll/ReactAndSpringDataRestBasicApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +77,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fba-araujo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fba-araujo/devops-23-24-PSM-1231826.git",
+    "accountId": "8dc5aa63-6bdc-4aef-932d-3155f9527d36"
+  }
+}]]></component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -84,51 +113,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.AppTest.executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "Gradle.gradle_basic_demo [backupSources].executor": "Run",
-    "Gradle.gradle_basic_demo [runClient].executor": "Run",
-    "Gradle.gradle_basic_demo [runServer].executor": "Run",
-    "Gradle.gradle_basic_demo [zipSources].executor": "Run",
-    "JUnit.All in react-and-spring-data-rest-basic (1).executor": "Run",
-    "JUnit.EmployeeTest.createValidEmployee.executor": "Run",
-    "JUnit.EmployeeTest.executor": "Run",
-    "JUnit.EmployeeTest.tryToCreateEmployeeNullEmail.executor": "Run",
-    "JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName.executor": "Run",
-    "JUnit.EmployeeTest.tryToCreateEmployeeWhitespaceDescription.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ReactAndSpringDataRestApplication.executor": "Debug",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "tut-basic-gradle",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/fibig/Documents/SWitCH/2-Semestre/DevOps/RepositórioCA/devops-23-24-PSM-1231826/CA2/Part1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.44052863",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.AppTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build react-and-spring-data-rest-basic.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gradle_basic_demo [backupSources].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gradle_basic_demo [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gradle_basic_demo [runServer].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gradle_basic_demo [zipSources].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.react-and-spring-data-rest-basic [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in react-and-spring-data-rest-basic (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeTest.createValidEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeTest.tryToCreateEmployeeNullEmail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeTest.tryToCreateEmployeeNullFirstName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeTest.tryToCreateEmployeeWhitespaceDescription.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ReactAndSpringDataRestApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ReactAndSpringDataRestApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;tut-basic-gradle&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fibig/Documents/SWitCH/2-Semestre/DevOps/RepositórioCA/devops-23-24-PSM-1231826/CA2/Part2/react-and-spring-data-rest-basic&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.44052863&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fibig\Documents\SWitCH\2-Semestre\DevOps\RepositórioCA\devops-23-24-PSM-1231826\CA2\Part2\react-and-spring-data-rest-basic" />
       <recent name="C:\Users\fibig\Documents\SWitCH\2-Semestre\DevOps\RepositórioCA\devops-23-24-PSM-1231826\CA2\Part1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -142,29 +175,7 @@
       <recent name="com.greglturnquist.payroll" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTest">
-    <configuration name="gradle_basic_demo [backupSources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="backupSources" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ReactAndSpringDataRestApplication (1)">
     <configuration name="gradle_basic_demo [zipSources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,6 +188,28 @@
         <option name="taskNames">
           <list>
             <option value="zipSources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="react-and-spring-data-rest-basic [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -228,7 +261,7 @@
     </configuration>
     <configuration name="ReactAndSpringDataRestApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="react-and-spring-data-rest-conditional" />
+      <module name="react-and-spring-data-rest-basic.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.greglturnquist.payroll.ReactAndSpringDataRestApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -315,18 +348,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.react-and-spring-data-rest-basic [dependencies]" />
         <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.EmployeeTest.tryToCreateEmployeeNullEmail" />
         <item itemvalue="JUnit.All in react-and-spring-data-rest-basic (1)" />
         <item itemvalue="Gradle.gradle_basic_demo [zipSources]" />
-        <item itemvalue="Gradle.gradle_basic_demo [backupSources]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -352,6 +386,7 @@
       <workItem from="1711022733685" duration="1437000" />
       <workItem from="1711028198924" duration="6000" />
       <workItem from="1712222352043" duration="1442000" />
+      <workItem from="1712227572297" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title">
       <option name="closed" value="true" />

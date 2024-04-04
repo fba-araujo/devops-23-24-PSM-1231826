@@ -7,10 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="react-and-spring-data-rest-basic (1)" />
+        <module name="react-and-spring-data-rest-basic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="react-and-spring-data-rest" target="1.8" />
+      <module name="com.greglturnquist.react-and-spring-data-rest-basic" target="17" />
+      <module name="com.greglturnquist.react-and-spring-data-rest-basic.main" target="17" />
+      <module name="com.greglturnquist.react-and-spring-data-rest-basic.test" target="17" />
       <module name="react-and-spring-data-rest-conditional" target="1.8" />
       <module name="react-and-spring-data-rest-conditional (1)" target="1.8" />
       <module name="react-and-spring-data-rest-events" target="1.8" />
