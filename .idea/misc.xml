@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/CA2/Part1/gradle_basic_demo" />
+    <file type="web" url="file://$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -23,4 +24,7 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
 </project>

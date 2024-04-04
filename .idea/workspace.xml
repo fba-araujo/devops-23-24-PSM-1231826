@@ -4,120 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Close #11 Add a new task of type Zip">
+    <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Fix: Added some repository corrections post review with teacher #12">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CA2/Part2/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/src/main/java/com/greglturnquist/payroll/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/images/conditional-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/images/conditional-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/images/conditional-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/java/com/greglturnquist/payroll/EmployeeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/java/com/greglturnquist/payroll/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/js/api/uriListConverter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/js/api/uriTemplateInterceptor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/js/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/js/follow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/resources/static/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/conditional/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java/com/greglturnquist/payroll/EmployeeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java/com/greglturnquist/payroll/EventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java/com/greglturnquist/payroll/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/java/com/greglturnquist/payroll/WebSocketConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/js/api/uriListConverter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/js/api/uriTemplateInterceptor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/js/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/js/follow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/js/websocket-listener.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/resources/static/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/events/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/images/hypermedia-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/images/hypermedia-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/java/com/greglturnquist/payroll/EmployeeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/java/com/greglturnquist/payroll/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/js/api/uriListConverter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/js/api/uriTemplateInterceptor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/js/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/js/follow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/resources/static/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/hypermedia/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/images/security-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/images/security-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/images/security-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/EmployeeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/EventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/ManagerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/SecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/SpringDataJpaUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/SpringDataRestEventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/java/com/greglturnquist/payroll/WebSocketConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/js/api/uriListConverter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/js/api/uriTemplateInterceptor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/js/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/js/follow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/js/websocket-listener.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/resources/static/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/security/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +25,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic">
       <ProjectState />
     </projectState>
   </component>
@@ -210,7 +112,7 @@
     "Spring Boot.ReactAndSpringDataRestApplication.executor": "Debug",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "tut-basic-gradle",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/fibig/Documents/SWitCH/2-Semestre/DevOps/RepositórioCA/devops-23-24-PSM-1231826/CA2/Part1",
     "node.js.detected.package.eslint": "true",
@@ -404,6 +306,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReactAndSpringDataRestBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="react-and-spring-data-rest-basic.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.greglturnquist.payroll.ReactAndSpringDataRestBasicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.EmployeeTest" />
@@ -440,7 +349,9 @@
       <workItem from="1710427017423" duration="10000" />
       <workItem from="1711015613125" duration="6138000" />
       <workItem from="1711021975395" duration="671000" />
-      <workItem from="1711022733685" duration="817000" />
+      <workItem from="1711022733685" duration="1437000" />
+      <workItem from="1711028198924" duration="6000" />
+      <workItem from="1712222352043" duration="1442000" />
     </task>
     <task id="LOCAL-00001" summary="Copy of tut-react-and-spring-data-rest spring guide with small change to include Job Title">
       <option name="closed" value="true" />
@@ -530,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711021754752</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fix: Added some repository corrections post review with teacher #12">
+      <option name="closed" value="true" />
+      <created>1711024121228</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711024121228</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,6 +467,7 @@
     <MESSAGE value="Close #9 Add Run Server task to Gradle Build" />
     <MESSAGE value="Close #10 Add a new task of type Copy" />
     <MESSAGE value="Close #11 Add a new task of type Zip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Close #11 Add a new task of type Zip" />
+    <MESSAGE value="Fix: Added some repository corrections post review with teacher #12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: Added some repository corrections post review with teacher #12" />
   </component>
 </project>
