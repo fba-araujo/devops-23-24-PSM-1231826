@@ -487,3 +487,8 @@ t
 DCA2/Part2/react-and-spring-data-rest-basic/node_modules/rest/wire.js,9\c\9c542d1488f3535836c8d76fb77e90ceb05f9a4d
 z
 JCA2/Part2/react-and-spring-data-rest-basic/node_modules/rest/UrlBuilder.js,3\c\3c8e29632e212057e27605c0e041d11760253569
+i
+9CA2/Part2/react-and-spring-data-rest-basic/node/README.md,9\e\9e02825d018447d0887dfe922867973e626b3529
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

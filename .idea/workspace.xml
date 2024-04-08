@@ -5,29 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="437c2590-34fa-4720-a3c0-5796d4554b81" name="Changes" comment="Close #11 Add a new task of type Zip">
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/api/uriListConverter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/api/uriTemplateInterceptor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/js/client.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/test/java/com/greglturnquist/payroll/EmployeeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CA1/tut-react-and-spring-data-rest/basic/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CA2/Part2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestBasicApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/src/test/java/com/greglturnquist/payroll/ReactAndSpringDataRestBasicApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +32,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/CA2/Part1/gradle_basic_demo">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/CA2/Part2/react-and-spring-data-rest-basic">
           <activation />
         </task>
         <projects_view>
@@ -77,18 +66,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "fba-araujo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fba-araujo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/fba-araujo/devops-23-24-PSM-1231826.git",
-    "accountId": "8dc5aa63-6bdc-4aef-932d-3155f9527d36"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fba-araujo/devops-23-24-PSM-1231826.git&quot;,
+    &quot;accountId&quot;: &quot;8dc5aa63-6bdc-4aef-932d-3155f9527d36&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
