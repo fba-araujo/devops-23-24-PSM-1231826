@@ -204,8 +204,7 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
-/.idea/sonarlint/
-/CA2/Part2/react-and-spring-data-rest-basic/node_modules/
-/CA2/Part2/react-and-spring-data-rest-basic/node/
-/CA2/Part2/react-and-spring-data-rest-basic/build/reports/
-/CA2/Part2/react-and-spring-data-rest-basic/.gradle/
+.idea/
+/CA2/Part2/react-and-spring-data-rest-basic/node_modules
+/CA2/Part2/react-and-spring-data-rest-basic/build
+/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/static/built
