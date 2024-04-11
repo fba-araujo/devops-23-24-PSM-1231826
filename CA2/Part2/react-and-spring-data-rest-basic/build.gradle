@@ -5,13 +5,6 @@ plugins {
     id "org.siouan.frontend-jdk17" version "8.0.0"
 }
 
-frontend {
-    nodeVersion = "16.20.2"
-    assembleScript = "run build"
-    cleanScript = "run clean"
-    checkScript = "run check"
-}
-
 group = 'com.greglturnquist'
 version = '0.0.1-SNAPSHOT'
 
@@ -31,7 +24,16 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+frontend {
+    nodeVersion = "16.20.2"
+    assembleScript = "run build"
+    cleanScript = "run clean"
+    checkScript = "run check"
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+
 
