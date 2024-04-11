@@ -204,20 +204,6 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
-/.idea/sonarlint/issuestore/9/e/9e02825d018447d0887dfe922867973e626b3529
-/.idea/sonarlint/securityhotspotstore/9/e/9e02825d018447d0887dfe922867973e626b3529
-/.idea/sonarlint/issuestore/0/0/0044765c27edfde48237897cc8e5b4598563e292
-/.idea/sonarlint/securityhotspotstore/0/0/0044765c27edfde48237897cc8e5b4598563e292
-/CA2/Part2/react-and-spring-data-rest-basic/node/CHANGELOG.md
-/CA2/Part2/react-and-spring-data-rest-basic/node/corepack
-/CA2/Part2/react-and-spring-data-rest-basic/node/corepack.cmd
-/CA2/Part2/react-and-spring-data-rest-basic/node/install_tools.bat
-/CA2/Part2/react-and-spring-data-rest-basic/node/LICENSE
-/CA2/Part2/react-and-spring-data-rest-basic/node/node.exe
-/CA2/Part2/react-and-spring-data-rest-basic/node/node_etw_provider.man
-/CA2/Part2/react-and-spring-data-rest-basic/node/nodevars.bat
-/CA2/Part2/react-and-spring-data-rest-basic/node/npm
-/CA2/Part2/react-and-spring-data-rest-basic/node/npm.cmd
-/CA2/Part2/react-and-spring-data-rest-basic/node/npx
-/CA2/Part2/react-and-spring-data-rest-basic/node/npx.cmd
-/CA2/Part2/react-and-spring-data-rest-basic/node/README.md
+/CA2/Part2/react-and-spring-data-rest-basic/node_modules
+/CA2/Part2/react-and-spring-data-rest-basic/build
+/CA2/Part2/react-and-spring-data-rest-basic/src/main/resources/static/built
