@@ -35,5 +35,18 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+task copyJarToDist(type: Copy) {
+    group = 'Distribution'
+    description = 'Copy the generated JAR files to the dist folder'
 
+    // Define the source directory
+    def sourceJars = fileTree('build/libs/').include('*.jar')
+
+    // Define the destination directory for the copy
+    def distDir = file("${project.rootDir}/dist")
+
+    // Configure the copy operation
+    from sourceJars
+    into distDir
+}
 

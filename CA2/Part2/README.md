@@ -1,27 +1,57 @@
-### Create branch tut-basic-gradle
-git branch tut-basic-gradle
+# Class Assigment 2 - Part 2
 
-### Start working in the branch tut-basic-gradle
-git checkout tut-basic-gradle
+## Introduction
+- Part 2 of this assignment focuses on converting the basic version of the Tutorial application from Maven to Gradle. 
+- This involves setting up a Gradle Spring Boot project with specified dependencies, integrating frontend management using a Gradle plugin, configuring tasks for building and running the application, and documenting the process.
 
-### Working folder
-cd CA2/Part2/react-and-spring-data-rest-basic
+## Table of Contents
+- [Step 1: Create a New Branch tut-basic-gradle](#step-1-create-a-new-branch-tut-basic-gradle)
 
-### Create gradle spring boot project
-Use https://start.spring.io to start a new gradle spring boot project with the following dependencies: 
-Rest Repositories; Thymeleaf; JPA; H2.
+
+### Step 1: Create a New Branch tut-basic-gradle
+- In your repository, create a new branch named tut-basic-gradle for this part of the assignment. 
+- Make sure to switch to this branch (checkout) before proceeding.
+
+      % git branch tut-basic-gradle
+
+      % git checkout tut-basic-gradle
+
+
+#### Change to the Working folder
+
+    % cd CA2/Part2/react-and-spring-data-rest-basic
+
+### Step 2: Start Spring Boot Project
+- Follow the instructions in the `readme` file of the tutorial to start a new Gradle Spring Boot project using [start.spring.io](https://start.spring.io).
+- Include the following dependencies: Rest Repositories, Thymeleaf, JPA, and H2.
+- Extract the generated zip file into the `CA2/Part2/` folder of your repository.
 
 You can  check the available gradle tasks by executing:
-./gradlew tasks
 
-In Employee the imports had a failed import there is no more javax now its jakarta 
+    % ./gradlew tasks
 
-Add the following plugin to build.gradle
+### Step 3: Delete src Folder
+- Delete the `src` folder from the project directory to prepare for integrating code from the basic tutorial.
+
+### Step 4: Copy Basic Tutorial Code
+- Copy the `src` folder (including subfolders) from the basic folder of the tutorial into the project directory.
+- Also, copy the files `webpack.config.js` and `package.json` into the project directory.
+- In Employee the imports should have a failed import since there is no more javax dependency now its jakarta. 
+
+#### Change the imports in Employee.java
+```java
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+```
+
+### Step 5: Configure Frontend Plugin
+- Add the `org.siouan.frontend` Gradle plugin to the project to manage the frontend code.
 ```gradle
 id "org.siouan.frontend-jdk17" version "8.0.0"
 ```
 
-Add also the following code in build.gradle to configure the previous plug-in:
+- Configure the plugin in the `build.gradle` file to specify Node.js version and scripts for assembling, cleaning, and checking the frontend.
 ```gradle
 frontend {
     nodeVersion = "16.20.2"
@@ -30,9 +60,8 @@ frontend {
     checkScript = "run check"
 }
 ```
-
-Update the scripts section/object in package.json to configure the execution of
-webpack:
+### Step 6: Update package.json
+- Update the `scripts` section in `package.json` to configure the execution of webpack for building the frontend.
 ```json
 "scripts": {
 "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js",
@@ -46,12 +75,18 @@ webpack:
 }
 ```
 
-### Execute the build
-./gradlew build
+### Step 7: Build Application
+- Execute `./gradlew build` to build the application. This command will also execute tasks related to frontend code generation.
 
-### Execute the program
-./gradlew bootRun
+        % ./gradlew build
 
+### Step 8: Run Application
+- Run the application using `./gradlew bootRun`.
+
+        % ./gradlew bootRun
+
+### Step 9: Add Copy Task
+- Add a task to Gradle to copy the generated JAR file to a folder named `dist` located at the project root level.
 
 
 
