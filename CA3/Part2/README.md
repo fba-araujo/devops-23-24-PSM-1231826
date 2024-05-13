@@ -6,6 +6,20 @@ Boot Application, gradle ”basic” version (developed in CA2-Part2). The setup
 the application: the *web* VM that executes the web application inside Tomcat9, and the *db* VM, which executes the H2
 database as a server process. The web application connects to this VM.
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Description of the Requirements Implementation](#description-of-the-requirements-implementation)
+  - [Step 1: Initial Solution](#step-1-initial-solution)
+  - [Step 2: Study Vagrantfile](#step-2-study-vagrantfile)
+  - [Step 3: Copy the Vagrantfile to your repository](#step-3-copy-the-vagrantfile-to-your-repository)
+  - [Step 4: Update the Vagrantfile configuration](#step-4-update-the-vagrantfile-configuration)
+  - [Step 5: Update the React-and-spring-data-rest-basic gradle project](#step-5-update-the-react-and-spring-data-rest-basic-gradle-project)
+  - [Step 6: Test the Spring Web application and the H2 console](#step-6-test-the-spring-web-application-and-the-h2-console)
+  - [Step 7: Mark Repository with Tag](#step-7-mark-repository-with-tag)
+- [Issues](#issues)
+- [Alternative VMware Workspace](#alternative-vmware-workstation)
+- [Conclusion](#conclusion)
+
 ## Description of the Requirements Implementation
 
 ### Step 1: Initial Solution
@@ -19,7 +33,6 @@ database as a server process. The web application connects to this VM.
   ```
 - **Initialize and Start Vagrant**: Execute the following commands in your terminal to initialize and start the Vagrant setup:
   ```bash
-  vagrant init
   vagrant up
   ```
   
@@ -96,11 +109,14 @@ database as a server process. The web application connects to this VM.
   - To deploy the war file to tomcat10 and start it:
   ```bash
       # To deploy the war file to tomcat10 do the following command:
-      sudo cp ./build/libs/basic-0.0.1-SNAPSHOT.war /var/lib/tomcat10/webapps
+      sudo cp ./build/libs/react-and-spring-data-rest-basic-0.0.1-SNAPSHOT.war /opt/tomcat10/webapps
 
       # Startup Tomcat
       /opt/tomcat10/bin/startup.sh
   ```
+
+### Step 5: Update the React-and-spring-data-rest-basic gradle project
+
 - Before running the Vagrant file, I had to make changes to the *build.gradle* file in *CA2-Part2* namely:
 
   - Applied the war plugin, which adds support for building WAR (Web Archive) files.
@@ -206,16 +222,59 @@ database as a server process. The web application connects to this VM.
 
 - NOTE: If the command above does not work, it may be necessary to run `vagrant destroy` before it. 
 
-### Step 5: Test the Spring Web application and the H2 console
-- Open the Spring Web application in your browser: http://localhost:8080/
+### Step 6: Test the Spring Web application and the H2 console
+- Open the Spring Web application in your browser: http://192.168.56.10:8080/react-and-spring-data-rest-basic-0.0.1-SNAPSHOT/ ([WEB VM IP]:[TOMCAT PORT]/[WAR FILE])
 - Open the H2 console in your browser: http://localhost:8082/
 
-### Step 6: Mark Repository with Tag
+### Step 7: Mark Repository with Tag
 - At the completion of Part 2 of this assignment, tag your repository with `ca3-part2`.
 
 ## Issues
-- While progressing through the assignment, an issue arose during the execution of vagrant up 
-in the final step of [Step 4: Update the VagrantFile configuration](#step-4-update-the-vagrantfile-configuration). This issue stemmed from a dependency on the Gradle clean build process, resulting in build failures that necessitated modifications.
+- While progressing through the assignment, an issue arose during the execution of vagrant up.
+- [Step 5: Update the React-and-spring-data-rest-basic gradle project](#step-5-update-the-react-and-spring-data-rest-basic-gradle-project) consists in the modifications needed to make the project configure correctly.
+- Adapting configurations to support Tomcat 10 within the Vagrant environment posed several challenges. 
+- Migrating to Tomcat 10 introduced compatibility issues with existing components, requiring careful adjustments to ensure seamless integration. 
+- Finding up-to-date documentation and resources for configuring Tomcat 10 within the Vagrant environment proved to be difficult. 
+- Additionally, integrating the Gradle build process with the updated environment encountered issues related to dependency resolution, task execution, and build configuration.
+
+## Alternative VMware Workstation
+In this alternative approach, we'll use VMware to manage virtual machines for hosting both the Spring Boot application and the H2 database. 
+VMware offers an intuitive interface and robust functionalities for virtualization, making it a suitable alternative to VirtualBox.
+
+### Step 1: Configuring VMware Virtual Machines
+Start by downloading and installing VMware Workstation on your local system.
+
+### Step 2: Creating the Vagrantfile for Your Project Repository
+- **Change the Box**: You need to use a Vagrant box that is compatible with VMware. Replace "ubuntu/bionic64" with a box that supports VMware, such as "bento/ubuntu-18.04".
+  ```
+  config.vm.box = "bento/ubuntu-18.04"
+  db.vm.box = "bento/ubuntu-18.04"
+  web.vm.box = "bento/ubuntu-18.04"
+  ```
+
+- **Specify VMware Provider**: Instead of specifying configurations specific to VirtualBox, you need to define configurations specific to the VMware provider.
+  - For the webserver VM (web), I replaced the VirtualBox provider with the VMware provider (vmware_fusion) and specified the RAM memory setting for VMware.
+  ```
+  web.vm.provider "vmware_fusion" do |v|
+      v.memory = 1024
+  end
+  ```
+
+### Step 3: Operating Virtual Machines
+**Accessing Applications**: To access the Spring Boot application, simply enter its IP address or hostname into your web browser. 
+Likewise, access the H2 database console using its designated IP address and configured port.
+
+### Step 4:  VMware Commands
+Execute the command to launch the Vagrantfile using VMware. 
+In case you make changes to your Vagrantfile and need to rerun it, ensure to delete the previously created VMs.
+```bash
+vagrant up --provider=vmware_desktop
+```
+
+- **Terminating VMs**: When finished, use the command to remove the VMs.
+```bash
+vagrant destroy -f  
+```
 
 ## Conclusion
 In summary, this assignment focused on using Vagrant to create a virtual environment for running a Spring Boot application
