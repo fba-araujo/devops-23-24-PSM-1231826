@@ -3,6 +3,7 @@ plugins {
     id 'org.springframework.boot' version '3.2.4'
     id 'io.spring.dependency-management' version '1.1.4'
     id "org.siouan.frontend-jdk17" version "8.0.0"
+    id 'war'
 }
 
 group = 'com.greglturnquist'
@@ -20,20 +21,40 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
     runtimeOnly 'com.h2database:h2'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    // To support war file for deploying to tomcat
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
 frontend {
     nodeVersion = "16.20.2"
-    assembleScript = "run build"
-    cleanScript = "run clean"
-    checkScript = "run check"
+
+    System.out.println(String.format("I am running on: %s(%s)", System.getProperty("os.arch"), System.getProperty("os.name")))
+
+    if (System.getProperty("os.arch").equals("aarch64")) {
+        if (System.getProperty("os.name").equals("Linux")) {
+            nodeDistributionUrlPathPattern = 'vVERSION/node-vVERSION-linux-arm64.TYPE'
+        }
+
+        if (System.getProperty("os.name").equals("Mac OS X")) {
+            nodeDistributionUrlPathPattern.set("vVERSION/node-vVERSION-darwin-x64.TYPE")
+        }
+    }
+
+    assembleScript = 'run webpack'
+    //assembleScript = "run build"
+    //cleanScript = "run clean"
+    //checkScript = "run check"
 }
 
 tasks.named('test') {
     useJUnitPlatform()
 }
+
 
 task copyJarToDist(type: Copy) {
     group = 'Distribution'
@@ -59,8 +80,6 @@ task cleanupWebpack(type: Delete) {
 
     // Configure the cleanup operation
     delete webpackOutputDir
-
-    // Ensure this task is executed before the clean task
-    clean.dependsOn this
 }
 
+build.dependsOn cleanupWebpack
