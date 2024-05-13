@@ -160,10 +160,51 @@ database as a server process. The web application connects to this VM.
 
   build.dependsOn cleanupWebpack
   ```
+
+- Update app.js
+  - Change method to fetch data when component mounts with full path
+  ```javascript
+    // Lifecycle method to fetch data when component mounts
+    componentDidMount() { // <2>
+    client({method: 'GET', path: '/react-and-spring-data-rest-basic-0.0.1-SNAPSHOT/api/employees'}).done(response => {
+    this.setState({employees: response.entity._embedded.employees});
+    });
+    }
+  ```
+- Update application.properties to enable H2 database
+  ```properties
+  server.servlet.context-path=/react-and-spring-data-rest-basic-0.0.1-SNAPSHOT
+  #To enable the H2 database so our Web VM in CA3/Part2 can communicate with the database in the DB VM in CA3/Part1
+
+  #The command at the end prevents the database from closing when the last connection is closed
+  spring.datasource.url=jdbc:h2:tcp://192.168.56.11:9092/./jpadb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  spring.datasource.driverClassName=org.h2.Driver
+  spring.datasource.username=sa
+  spring.datasource.password=
+  spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+  spring.jpa.hibernate.ddl-auto=update
+  spring.h2.console.enabled=true
+  spring.h2.console.path=/h2-console
+  spring.h2.console.settings.web-allow-others=true
+  ```
+
+- Add ServletInitializer a class used to configure the Spring application when deployed as a WAR file in a servlet container.
   
+- ```java
+  public class ServletInitializer extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+    // Configures the application sources to be used for deployment.
+    return application.sources(ReactAndSpringDataRestApplication.class);
+    }
+  }
+  ```
+
 - Execute `sudo vagrant up`
 
-- NOTE: If the command above does not work, it may be necessary to run `sudo vagrant destroy` before it. 
+- NOTE: If the command above does not work, it may be necessary to run `vagrant destroy` before it. 
 
 ### Step 5: Test the Spring Web application and the H2 console
 - Open the Spring Web application in your browser: http://localhost:8080/

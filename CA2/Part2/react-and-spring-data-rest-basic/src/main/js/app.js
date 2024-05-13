@@ -19,7 +19,7 @@ class App extends React.Component { // <1>
 
     // Lifecycle method to fetch data when component mounts
     componentDidMount() { // <2>
-        client({method: 'GET', path: '/api/employees'}).done(response => {
+        client({method: 'GET', path: '/react-and-spring-data-rest-basic-0.0.1-SNAPSHOT/api/employees'}).done(response => {
             this.setState({employees: response.entity._embedded.employees});
         });
     }
@@ -31,7 +31,6 @@ class App extends React.Component { // <1>
         )
     }
 }
-
 // end::app[]
 
 // tag::employee-list[]
@@ -58,7 +57,6 @@ class EmployeeList extends React.Component {
         )
     }
 }
-
 // end::employee-list[]
 
 // tag::employee[]
@@ -77,13 +75,12 @@ class Employee extends React.Component {
         )
     }
 }
-
 // end::employee[]
 
 // tag::render[]
 // Render the main App component to the DOM
 ReactDOM.render(
-    <App/>,
+    <App />,
     document.getElementById('react')
 )
 // end::render[]
