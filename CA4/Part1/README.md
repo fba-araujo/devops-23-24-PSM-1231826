@@ -6,15 +6,16 @@ Our objectives are to package and execute the chat server in a container, tag th
 We will create two versions of our solution: one where the chat server is built inside the Dockerfile, and another where it is built on the host computer and copied into the Dockerfile.
 
 ## Table of Contents
-- [Introduction](#introduction)
 - [Version 1: Building the Chat Server Inside the Dockerfile](#version-1-building-the-chat-server-inside-the-dockerfile)
     - [Step 1: Create the Dockerfile](#step-1-create-the-dockerfile)
-    - [Step 2: Build the Docker Image Tag and Push the Docker Image to Docker Hub](#step-2-build-the-docker-image-tag-it-and-push-it-automatically-)
+    - [Step 2: Build the Docker Image Tag and Push the Docker Image to Docker Hub](#step-2-build-the-docker-image)
+    - [Step 3: Publish the image on Docker Hub](#step-3-publish-the-image-on-docker-hub)
     - [Step 4: Run the Docker Container](#step-3-run-the-docker-container)
 - [Version 2: Building the Chat Server on the Host and Copying the Jar File into the Dockerfile](#version-2-building-the-chat-server-on-the-host-and-copying-the-jar-file-into-the-dockerfile)
     - [Step 1: Build the Chat Server on the Host](#step-1-build-the-chat-server-on-the-host)
-    - [Step 2: Build the Docker Image Tag and Push the Docker Image to Docker Hub](#step-2-build-the-docker-image-tag-it-and-push-it-automatically)
-    - [Step 3: Run the Docker Container](#step-3-run-the-docker-container-1)
+    - [Step 2: Build the Docker Image Tag and Push the Docker Image to Docker Hub](#step-2-build-the-docker-image-1)
+    - [Step 3: Publish the image on Docker Hub](#step-3-publish-the-image-on-docker-hub-1)
+    - [Step 4: Run the Docker Container](#step-4-run-the-docker-container-1)
 - [Testing the Chat Application](#testing-the-chat-application)
 - [Commit Tag](#commit-tag)
 - [Conclusion](#conclusion)
@@ -54,13 +55,28 @@ EXPOSE 59001
 CMD ["./gradlew", "runServer"]
 ```
 
-### Step 2: Build the Docker Image, tag it and push it automatically 
+### Step 2: Build the Docker Image
 - To run the image, install Docker Desktop, create an account and make sure it is running your computer.
 ```bash
-docker build -f CA4/Part1/CA4Part1.Dockerfile -t filipaba/chat-server:version1 .
+docker build -t chat-server:version1 -f CA4/Part1/CA4Part1.Dockerfile  .
 ```
 
-### Step 3: Run the Docker Container
+### Step 3:  Publish the image on Docker Hub
+Before uploading the image on Docker Hub, I had to create a repository on Docker Hub named *devops*.
+
+https://hub.docker.com/repository/docker/filipaba/devops/general
+
+Then, I had to tag the image with the command:
+```bash
+docker tag chat-server:version1 filipaba/devops:ca4-part1
+```
+
+To push the image to the Docker Hub repository, I ran the following command:
+```bash
+docker push filipaba/devops:ca4-part1
+```
+
+### Step 4: Run the Docker Container
 - Run the Docker container from the image:
 ```bash 
 docker run -d -p 59001:59001 filipaba/chat-server:version1
@@ -94,13 +110,28 @@ COPY ../../CA2/Part1/gradle_basic_demo/build/libs/basic_demo-0.1.0.jar /usr/src/
 CMD ["java", "-cp", "basic_demo-0.1.0.jar", "basic_demo.ChatServerApp", "59001"]
 ```
 
-### Step 2: Build the Docker Image, tag it and push it automatically
+### Step 2: Build the Docker Image
 - To run the image, install Docker Desktop, create an account and make sure it is running your computer.
 ```bash
-docker build -f CA4/Part1/CA4Part1v2.Dockerfile -t filipaba/chat-server:version2 .
+docker build -t chat-server:version2 -f CA4/Part1/CA4Part1v2.Dockerfile .
 ```
 
-### Step 3: Run the Docker Container
+### Step 3:  Publish the image on Docker Hub
+Before uploading the image on Docker Hub, I had to create a repository on Docker Hub named *devops*.
+
+https://hub.docker.com/repository/docker/filipaba/devops/general
+
+Then, I had to tag the image with the command:
+```bash
+docker tag chat-server:version2 filipaba/devops:ca4-part2
+```
+
+To push the image to the Docker Hub repository, I ran the following command:
+```bash
+docker push filipaba/devops:ca4-part2
+```
+
+### Step 4: Run the Docker Container
 - Run the Docker container from the image:
 ```bash 
 docker run -d -p 59001:59001 filipaba/chat-server:version2
