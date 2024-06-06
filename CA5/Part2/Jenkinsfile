@@ -1,0 +1,61 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/fba-araujo/devops-23-24-PSM-1231826.git'
+                dir('CA2/Part2/tutorial-spring-boot-application') {
+                    // Switch to the correct directory after checkout
+                }
+            }
+        }
+        stage('Assemble') {
+            steps {
+                dir('CA2/Part2/tutorial-spring-boot-application') {
+                    sh './gradlew assemble'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                dir('CA2/Part2/tutorial-spring-boot-application') {
+                    sh './gradlew test'
+                    junit 'build/test-results/test/*.xml'
+                }
+            }
+        }
+        stage('Javadoc') {
+            steps {
+                dir('CA2/Part2/tutorial-spring-boot-application') {
+                    sh './gradlew javadoc'
+                    publishHTML(target: [
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll: true,
+                        reportDir: 'build/docs/javadoc',
+                        reportFiles: 'index.html',
+                        reportName: 'Javadoc'
+                    ])
+                }
+            }
+        }
+        stage('Archive') {
+            steps {
+                dir('CA2/Part2/tutorial-spring-boot-application') {
+                    archiveArtifacts artifacts: 'build/libs/*.war', fingerprint: true
+                }
+            }
+        }
+        stage('Publish Image') {
+            steps {
+                script {
+                    dir('CA2/Part2/tutorial-spring-boot-application') {
+                        def customImage = docker.build("filipaba/spring-boot-app:${env.BUILD_NUMBER}")
+                        customImage.push()
+                    }
+                }
+            }
+        }
+    }
+}
