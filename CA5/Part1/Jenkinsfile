@@ -3,16 +3,15 @@ pipeline {
 
     stages {
         stage('Checkout') {
-    steps {
-        dir('CA2/Part1/gradle-basic-demo') {
-            git url: 'https://github.com/fba-araujo/devops-23-24-PSM-1231826.git'
-        }
+            steps {
+                git branch: 'main', url: 'https://github.com/fba-araujo/devops-23-24-PSM-1231826.git'
+                dir('CA2/Part1/gradle_basic_demo') {
                 }
             }
         }
         stage('Assemble') {
             steps {
-                dir('CA2/Part1/gradle-basic-demo') {
+                dir('CA2/Part1/gradle_basic_demo') {
                     sh 'chmod +x gradlew'
                     sh './gradlew assemble'
                 }
@@ -20,7 +19,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                dir('CA2/Part1/gradle-basic-demo') {
+                dir('CA2/Part1/gradle_basic_demo') {
                     sh './gradlew test'
                     junit 'build/test-results/test/*.xml'
                 }
@@ -28,7 +27,7 @@ pipeline {
         }
         stage('Archive') {
             steps {
-                dir('CA2/Part1/gradle-basic-demo') {
+                dir('CA2/Part1/gradle_basic_demo') {
                     archiveArtifacts artifacts: 'build/libs/*.jar', fingerprint: true
                 }
             }

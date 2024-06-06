@@ -1,24 +1,27 @@
 pipeline {
     agent any
 
+    environment {
+        CA_DIR = 'CA2/Part2/react-and-spring-data-rest-basic'
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                dir('CA2/Part2/tutorial-spring-boot-application') {
-                    git branch: 'main', url: 'https://github.com/fba-araujo/devops-23-24-PSM-1231826.git'
-                }
+                git branch: 'main', url: 'https://github.com/fba-araujo/devops-23-24-PSM-1231826.git'
             }
         }
         stage('Assemble') {
             steps {
-                dir('CA2/Part2/tutorial-spring-boot-application') {
+                dir(env.CA_DIR) {
+                    sh 'chmod +x gradlew'
                     sh './gradlew assemble'
                 }
             }
         }
         stage('Test') {
             steps {
-                dir('CA2/Part2/tutorial-spring-boot-application') {
+                dir(env.CA_DIR) {
                     sh './gradlew test'
                     junit 'build/test-results/test/*.xml'
                 }
@@ -26,7 +29,7 @@ pipeline {
         }
         stage('Javadoc') {
             steps {
-                dir('CA2/Part2/tutorial-spring-boot-application') {
+                dir(env.CA_DIR) {
                     sh './gradlew javadoc'
                     publishHTML(target: [
                         allowMissing: false,
@@ -41,19 +44,40 @@ pipeline {
         }
         stage('Archive') {
             steps {
-                dir('CA2/Part2/tutorial-spring-boot-application') {
+                dir(env.CA_DIR) {
                     archiveArtifacts artifacts: 'build/libs/*.war', fingerprint: true
                 }
             }
         }
+        stage('Create Dockerfile') {
+            steps {
+                echo 'Creating Dockerfile...'
+                dir(env.CA_DIR) {
+                    script {
+                        def dockerfile = """
+                        FROM tomcat:10-jdk17-openjdk-slim
+
+                        # Remove the default ROOT application
+                        RUN rm -rf /usr/local/tomcat/webapps/ROOT
+
+                        # Copy the WAR file to the webapps directory in Tomcat
+                        COPY build/libs/react-and-spring-data-rest-basic-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+                        """
+                        writeFile file: 'CA5', text: dockerfile
+                    }
+                }
+            }
+        }
+
         stage('Publish Image') {
             steps {
                 script {
-                    dir('CA2/Part2/tutorial-spring-boot-application') {
-                        withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_HUB_USER', passwordVariable: 'DOCKER_HUB_PASS')]) {
-                            def customImage = docker.build("filipaba/devops:ca5")
+                    dir(env.CA_DIR) {
+                            def customImage = docker.build("filipaba/devops:${env.BUILD_ID}")
                             docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
                                 customImage.push()
+                            }
+                    }
                 }
             }
         }
