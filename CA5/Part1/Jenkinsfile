@@ -13,6 +13,7 @@ pipeline {
         stage('Assemble') {
             steps {
                 dir('CA2/Part1/gradle-basic-demo') {
+                    sh 'chmod +x gradlew'
                     sh './gradlew assemble'
                 }
             }
