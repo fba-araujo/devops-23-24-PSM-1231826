@@ -71,7 +71,7 @@ pipeline {
             steps {
                 script {
                     dir(env.CA_DIR) {
-                            def dockerImage = docker.build("filipaba/devops:${env.BUILD_ID}", "-f CA5 .")
+                            def dockerImage = docker.build("filipaba/devops:CA5", "-f CA5 .")
                             docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
                             dockerImage.push()
                             }
