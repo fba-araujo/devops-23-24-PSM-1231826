@@ -56,12 +56,10 @@ pipeline {
                     script {
                         def dockerfile = """
                         FROM tomcat:10-jdk17-openjdk-slim
-
-                        # Remove the default ROOT application
                         RUN rm -rf /usr/local/tomcat/webapps/ROOT
-
-                        # Copy the WAR file to the webapps directory in Tomcat
                         COPY build/libs/react-and-spring-data-rest-basic-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+                        EXPOSE 8080
+                        CMD ["catalina.sh", "run"]
                         """
                         writeFile file: 'CA5', text: dockerfile
                     }
@@ -73,9 +71,9 @@ pipeline {
             steps {
                 script {
                     dir(env.CA_DIR) {
-                            def customImage = docker.build("filipaba/devops:${env.BUILD_ID}")
+                            def dockerImage = docker.build("filipaba/devops:${env.BUILD_ID}", "-f CA5 .")
                             docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
-                                customImage.push()
+                            dockerImage.push()
                             }
                     }
                 }
